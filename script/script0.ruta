@@ -1,0 +1,16 @@
+WORDLIST releaseTrigger = 'releaseTriggers.txt';
+WORDLIST announcementTrigger = 'announcementTriggers.txt';
+WORDLIST company = 'companies.txt';
+
+DECLARE EventType;
+DECLARE EventType Release;
+DECLARE EventType Announcement;
+DECLARE Company;
+DECLARE Annotation Event (Company participant, EventType type);
+
+Document {-> MARKFAST(Release, releaseTrigger)};
+Document {-> MARKFAST(Announcement, announcementTrigger)};
+Document {-> MARKFAST(Company, company)};
+
+//Company EventType {-> MARK(Event, 1, 2)};
+Company EventType {-> CREATE(Event, 1, 2, "participant" = Company, "type" = EventType)};

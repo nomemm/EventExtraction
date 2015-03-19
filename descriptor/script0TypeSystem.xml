@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>script0TypeSystem</name>
+    <imports>
+        <import location="BasicTypeSystem.xml"/>
+    </imports>
+    <types>
+        <typeDescription>
+            <name>script0.EventType</name>
+            <description>Type defined in null.script0</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>script0.Release</name>
+            <description>Type defined in null.script0</description>
+            <supertypeName>script0.EventType</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>script0.Announcement</name>
+            <description>Type defined in null.script0</description>
+            <supertypeName>script0.EventType</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>script0.Company</name>
+            <description>Type defined in null.script0</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>script0.Event</name>
+            <description>Type defined in null.script0</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>participant</name>
+                    <description>participant</description>
+                    <rangeTypeName>script0.Company</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>type</name>
+                    <description>type</description>
+                    <rangeTypeName>script0.EventType</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+        <typeDescription>
+            <name>script0.EventType</name>
+            <description>Type defined in null.script0</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>script0.Release</name>
+            <description>Type defined in null.script0</description>
+            <supertypeName>script0.EventType</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>script0.Announcement</name>
+            <description>Type defined in null.script0</description>
+            <supertypeName>script0.EventType</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>script0.Company</name>
+            <description>Type defined in null.script0</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+        </typeDescription>
+        <typeDescription>
+            <name>script0.Event</name>
+            <description>Type defined in null.script0</description>
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+            <features>
+                <featureDescription>
+                    <name>participant</name>
+                    <description>participant</description>
+                    <rangeTypeName>script0.Company</rangeTypeName>
+                </featureDescription>
+                <featureDescription>
+                    <name>type</name>
+                    <description>type</description>
+                    <rangeTypeName>script0.EventType</rangeTypeName>
+                </featureDescription>
+            </features>
+        </typeDescription>
+    </types>
+</typeSystemDescription>
